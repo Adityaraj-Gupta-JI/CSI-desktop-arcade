@@ -75,7 +75,6 @@ export function Projects() {
                 uRL={p.video}
                 source="URL"
                 style={{ width: "100%", height: "100%" }} 
-                link={undefined}
               />
             </Card>
           ))}

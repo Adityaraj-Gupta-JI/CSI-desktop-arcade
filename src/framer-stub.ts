@@ -33,7 +33,7 @@ export const useIsInCurrentNavigationTarget = () => true;
 export const getFonts = () => [];
 export const getPropertyControls = () => ({});
 export const fontStore = { load: () => {} };
-export const useSVGTemplate = () => "";
+export const useSVGTemplate = () => null;
 export const ControlType = {
   Boolean: "boolean",
   Number: "number",
