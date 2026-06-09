@@ -7,11 +7,11 @@ import MacDock from "@/components/MacDock";
 import GolemEyes from "@/components/GolemEyes";
 import Launchpad from "@/components/Launchpad";
 import LoadingScreen from "@/components/LoadingScreen";
-import MightyEagleStrike from "@/components/MightyEagleStrike";
 import RobotFollower from "@/components/RobotFollower";
-import ForestBackground from "@/components/ForestBackground";
+import EnhancedCyberCity from "@/components/EnhancedCyberCity";
 import MatrixRain from "@/components/MatrixRain";
 import TechBackground from "@/components/TechBackground";
+import ImprovedMatrixTransition from "@/components/ImprovedMatrixTransition";
 
 type WindowId = "about" | "depts" | "events" | "projects" | "team" | "contact" | "csi";
 
@@ -20,9 +20,9 @@ export default function Desktop() {
   const [activeWindow, setActiveWindow] = useState<WindowId | null>(null);
   const [isLaunchpadOpen, setIsLaunchpadOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  
-  // Cinematic Mighty Eagle Animation States
-  const [isEagleStriking, setIsEagleStriking] = useState(false);
+
+  // Matrix Block Flow Transition States
+  const [isMatrixTransitioning, setIsMatrixTransitioning] = useState(false);
   const [pendingWindowId, setPendingWindowId] = useState<WindowId | null>(null);
 
   const toggleWindow = (id: string) => {
@@ -31,7 +31,7 @@ export default function Desktop() {
       return;
     }
 
-    if (isEagleStriking) return;
+    if (isMatrixTransitioning) return;
 
     const winId = id as WindowId;
 
@@ -44,12 +44,12 @@ export default function Desktop() {
       }
     } else {
       setPendingWindowId(winId);
-      setIsEagleStriking(true);
+      setIsMatrixTransitioning(true);
     }
   };
 
-  const handleEagleAnimationComplete = () => {
-    setIsEagleStriking(false);
+  const handleMatrixTransitionComplete = () => {
+    setIsMatrixTransitioning(false);
     if (pendingWindowId) {
       setOpenWindows((prev) => {
         if (prev.includes(pendingWindowId)) return prev;
@@ -109,24 +109,27 @@ export default function Desktop() {
     >
       {/* Loading Sequence */}
       {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
-      
+
       {/* Layer 1: Tech Background - Grid, particles, hex nodes */}
       <TechBackground />
 
       {/* Layer 2: Matrix Rain - Falling characters with ASCII figure */}
       <MatrixRain opacity={0.12} />
 
-      {/* Layer 3: Interactive Robot Companion (replaces Bird) */}
+      {/* Layer 3: Interactive Robot Companion */}
       <RobotFollower size={44} />
 
-      {/* Layer 4: Mighty Eagle Cinematic Overlay */}
-      {isEagleStriking && (
-        <MightyEagleStrike onComplete={handleEagleAnimationComplete} />
+      {/* Layer 4: Matrix Block Flow Transition Overlay */}
+      {isMatrixTransitioning && (
+        <ImprovedMatrixTransition 
+          onComplete={handleMatrixTransitionComplete} 
+          duration={1200}
+        />
       )}
 
-      {/* Layer 5: Forest Background with parallax & birds */}
-      <ForestBackground />
-      
+      {/* Layer 5: ASCII Cyberpunk City Background */}
+      <EnhancedCyberCity />
+
       {/* Layer 6: Ancient Forest Guardian Golem */}
       <GolemEyes />
 
