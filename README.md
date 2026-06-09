@@ -39,7 +39,7 @@
 > **▶ Full Walkthrough Video**
 
 <div align="center">
-  <video src="assets/demo_video.mp4" width="100%" controls muted></video>
+  <img src="assets/demo_main.gif" alt="CSI Desktop Arcade System Walkthrough" width="100%" />
 </div>
 
 ---
