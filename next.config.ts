@@ -2,24 +2,28 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
-  // Allow images and scripts from Framer domains
+  turbopack: {}, // silences turbopack/webpack warning
+
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'framerusercontent.com' },
       { protocol: 'https', hostname: 'framer.com' },
     ],
   },
+
   experimental: {
-    // This is required for the URL imports to be processed
-    urlImports: ['https://framer.com/', 'https://framerusercontent.com/'],
+    // urlImports is incompatible with --webpack flag, so removed.
+    // If you need Framer URL imports, drop --webpack and use turbopack instead.
   },
+
   webpack: (config, { isServer }) => {
+    // Alias framer to your stub — this overrides the installed package
     config.resolve.alias = {
       ...config.resolve.alias,
       framer: path.resolve(__dirname, 'src/framer-stub.ts'),
+      'framer/motion': path.resolve(__dirname, 'src/framer-stub.ts'),
     };
-    
-    // Ensure we handle external URLs correctly in Webpack
+
     config.experiments = {
       ...config.experiments,
       topLevelAwait: true,
@@ -32,6 +36,7 @@ const nextConfig: NextConfig = {
         encoding: false,
       };
     }
+
     return config;
   },
 };
