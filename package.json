@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "face-api.js": "^0.22.2",
+    "face-api.js": "^0.20.0",
     "framer": "^2.4.1",
     "framer-motion": "^12.6.0",
     "gsap": "^3.12.5",
