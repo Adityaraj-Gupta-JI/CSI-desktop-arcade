@@ -21,13 +21,15 @@
     "three": "^0.169.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.19.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/three": "^0.169.0",
     "eslint": "^9",
     "eslint-config-next": "^15.3.8",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.99.0"
   },
   "allowScripts": {
     "framer@2.4.1": true,
