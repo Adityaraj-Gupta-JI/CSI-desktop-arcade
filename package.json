@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "dev": "next dev --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,7 +14,7 @@
     "framer-motion": "^12.6.0",
     "gsap": "^3.12.5",
     "lucide-react": "^0.474.0",
-    "next": "15.2.4",
+    "next": "^15.3.8",
     "postprocessing": "^6.36.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -26,7 +26,12 @@
     "@types/react-dom": "^19",
     "@types/three": "^0.169.0",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "^15.3.8",
     "typescript": "^5"
+  },
+  "allowScripts": {
+    "framer@2.4.1": true,
+    "sharp@0.34.5": true,
+    "unrs-resolver@1.12.2": true
   }
 }
