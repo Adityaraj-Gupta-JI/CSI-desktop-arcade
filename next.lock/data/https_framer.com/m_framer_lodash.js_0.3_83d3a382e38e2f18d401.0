@@ -1,0 +1,7 @@
+/*
+ * lodash (framer/lodash@0.3.0)
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/0tL3NK6Gdibfi84549mt/wxfj3uKBUiepHMkJD9XI/lodash.js"

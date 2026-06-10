@@ -1,0 +1,8 @@
+/*
+ * Album Cover
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/dpEmeVh58VogrE7gG2KJ/q4nvmo72PxbPXUavvzHZ/sRAwZp5Ns.js"
+export { default } from "https://framerusercontent.com/modules/dpEmeVh58VogrE7gG2KJ/q4nvmo72PxbPXUavvzHZ/sRAwZp5Ns.js"

@@ -1,0 +1,8 @@
+/*
+ * Player
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/306NY23g6JnBR5ALxaqi/6wMP6kIA4CLLixFLIpjn/YfjyTwjn3.js"
+export { default } from "https://framerusercontent.com/modules/306NY23g6JnBR5ALxaqi/6wMP6kIA4CLLixFLIpjn/YfjyTwjn3.js"

@@ -1,0 +1,8 @@
+/*
+ * Video Component
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/tcS28MSDK6PiJ5wJWcsW/rgRu2j7Rdo4wHbNub7OE/uXEZfpjEi.js"
+export { default } from "https://framerusercontent.com/modules/tcS28MSDK6PiJ5wJWcsW/rgRu2j7Rdo4wHbNub7OE/uXEZfpjEi.js"

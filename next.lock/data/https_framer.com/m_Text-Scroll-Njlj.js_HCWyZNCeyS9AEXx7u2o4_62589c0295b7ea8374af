@@ -1,0 +1,8 @@
+/*
+ * Text_Scroll
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/Ey32GF495vsnzWaGo5Hq/HCWyZNCeyS9AEXx7u2o4/Text_Scroll.js"
+export { default } from "https://framerusercontent.com/modules/Ey32GF495vsnzWaGo5Hq/HCWyZNCeyS9AEXx7u2o4/Text_Scroll.js"

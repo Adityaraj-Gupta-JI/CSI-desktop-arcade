@@ -1,0 +1,7 @@
+import{jsx as _jsx}from"react/jsx-runtime";import{useEffect,useState,useRef}from"react";export function eyesFollowCursor(Component){return props=>{const ref=useRef(null);const[offset,setOffset]=useState({x:0,y:0});useEffect(()=>{const handleMove=e=>{if(!ref.current)return;// Get center of pupil container
+const rect=ref.current.getBoundingClientRect();const cx=rect.left+rect.width/2;const cy=rect.top+rect.height/2;// Vector from pupil center to cursor
+const dx=e.clientX-cx;const dy=e.clientY-cy;// Limit movement radius
+const distance=Math.min(10,Math.hypot(dx,dy));const angle=Math.atan2(dy,dx);// Offset position relative to center
+setOffset({x:Math.cos(angle)*distance,y:Math.sin(angle)*distance});};window.addEventListener("mousemove",handleMove);return()=>window.removeEventListener("mousemove",handleMove);},[]);return /*#__PURE__*/_jsx("div",{ref:ref,style:{position:"absolute",left:0,top:0,width:"100%",height:"100%",display:"flex",alignItems:"center",justifyContent:"center",pointerEvents:"none",transform:`translate(${offset.x}px, ${offset.y}px)`,...props.style},children:/*#__PURE__*/_jsx(Component,{...props})});};}
+export const __FramerMetadata__ = {"exports":{"eyesFollowCursor":{"type":"reactHoc","name":"eyesFollowCursor","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./Mouse_follow.map

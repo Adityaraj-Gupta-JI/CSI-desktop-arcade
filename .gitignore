@@ -48,5 +48,3 @@ next-env.d.ts
 .vscode/
 .idea/
 framer_temp.js
-next.lock/
-next.lock/

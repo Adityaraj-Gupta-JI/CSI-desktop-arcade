@@ -1,0 +1,8 @@
+/*
+ * fx_Slider
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/5qsMbF7wB49CpkXDODPb/hPSDV5WrI84HI4IP5wb3/fx_Slider.js"
+export { default } from "https://framerusercontent.com/modules/5qsMbF7wB49CpkXDODPb/hPSDV5WrI84HI4IP5wb3/fx_Slider.js"

@@ -1,0 +1,8 @@
+/*
+ * ElevatedCarousel
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/0bZhN6MqrJ0zFRlqpr2F/srHp5fdPcJgdWmuZ09mr/ElevatedCarousel.js"
+export { default } from "https://framerusercontent.com/modules/0bZhN6MqrJ0zFRlqpr2F/srHp5fdPcJgdWmuZ09mr/ElevatedCarousel.js"

@@ -1,0 +1,8 @@
+/*
+ * LiquidImage
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/L2g2etirT4tdjBaE4xrO/BzHG0pe3fwejvzhuvfLr/LiquidImage.js"
+export { default } from "https://framerusercontent.com/modules/L2g2etirT4tdjBaE4xrO/BzHG0pe3fwejvzhuvfLr/LiquidImage.js"

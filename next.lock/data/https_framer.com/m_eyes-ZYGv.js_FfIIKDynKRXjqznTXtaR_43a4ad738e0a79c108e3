@@ -1,0 +1,8 @@
+/*
+ * eyes
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/QYEcGvEeKUnJZFRZbPKA/FfIIKDynKRXjqznTXtaR/Au3uQuBke.js"
+export { default } from "https://framerusercontent.com/modules/QYEcGvEeKUnJZFRZbPKA/FfIIKDynKRXjqznTXtaR/Au3uQuBke.js"
